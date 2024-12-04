@@ -11,7 +11,7 @@ const WelcomePage = () => {
     if (auth.success) {
       navigate("/shop");
     }
-  }, [auth.success]);
+  }, [auth.success, navigate]);
 
   return (
     <div className="flex flex-col items-center justify-center h-screen">

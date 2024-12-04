@@ -1,4 +1,3 @@
-import { useSelector } from "react-redux";
 import { useLocation, useNavigate } from "react-router-dom";
 import Login from "../components/Login";
 import Register from "../components/Register";
@@ -16,7 +15,6 @@ const AuthPage = () => {
       navigate("/home");
     }
   }, [isLoggedIn, navigate]);
-  
 
   const dynamicTab = () => {
     if (pathname === "/login") {

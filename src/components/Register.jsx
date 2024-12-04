@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Notify } from "notiflix";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { register } from "../redux/authSlice";
 
@@ -55,7 +55,6 @@ const Register = () => {
             onChange={(e) => setPassword(e.target.value)}
           />
           <button type="submit">Login</button>
-          
         </form>
       </div>
     </div>

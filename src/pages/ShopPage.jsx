@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import ProductList from "../components/ProductList";
-import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 
 const ShopPage = () => {
