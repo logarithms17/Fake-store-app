@@ -9,22 +9,20 @@ import AuthPage from "./pages/AuthPage";
 
 const App = () => {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<SharedLayout />}>
-          <Route index element={<WelcomePage />} />
-          <Route path="login" element={<AuthPage />} />
-          <Route path="register" element={<AuthPage />} />
-          <Route path="home" element={<HomePage />} />
-          <Route path="shop" element={<ShopPage />} />
-        </Route>
+    <Routes>
+      <Route path="/" element={<SharedLayout />}>
+        <Route index element={<WelcomePage />} />
+        <Route path="login" element={<AuthPage />} />
+        <Route path="register" element={<AuthPage />} />
+        <Route path="home" element={<HomePage />} />
+        <Route path="shop" element={<ShopPage />} />
+      </Route>
 
-        <Route
-          path="*"
-          element={<ErrorPage message="Page Not Found" status="404" />}
-        />
-      </Routes>
-    </Router>
+      <Route
+        path="*"
+        element={<ErrorPage message="Page Not Found" status="404" />}
+      />
+    </Routes>
   );
 };
 
