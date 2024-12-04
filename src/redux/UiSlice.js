@@ -6,6 +6,7 @@ const uiSlice = createSlice({
         amount: 0,
         cartIsVisible: false,
     },
+    
     reducers: {
         toggleCart(state) {
             state.cartIsVisible = !state.cartIsVisible;
